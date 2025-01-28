@@ -7,21 +7,44 @@ body {
              font-mono;
 }
 header {
-    @apply flex 
+    @apply flex items-center justify-between 
            bg-[#1B2A41]
            h-10;
 }
-footer {
-    @apply flex w-full 
-         bg-[#1B2A41]
-           h-10;
+main {
+    @apply mb-auto
+           ;
 }
-nav {
-    @apply flex ;
+footer {
+    @apply w-full 
+         bg-[#1B2A41]
+           h-10
+           fixed bottom-0
+           ;
+}
+.copy-wrapper {
+    @apply m-1
+           flex
+           justify-between
+           ;
+}
+.copyright {
+    @apply m-1
+           px-10
+           ;
+}
+.footer-socials {
+    @apply 
+           flex
+           space-x-2
+           px-10
+           ;
+           
+           
 }
 .nav-links {
     @apply text-[#CCC9DC]
-             flex ;
+    flex ;
 }
 .nav-links a {
     @apply hover:underline 
@@ -34,6 +57,6 @@ nav {
 }
 h1 {
     @apply text-[#CCC9DC]
-             flex items-center flex-grow ml-1
+             flex-grow ml-1
              ;
 }
