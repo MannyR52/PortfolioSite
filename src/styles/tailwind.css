@@ -4,22 +4,36 @@
 
 body {
     @apply bg-[#0C1821]
-    font-mono;
+             font-mono;
 }
 header {
-    @apply flex justify-center;
+    @apply flex 
+           bg-[#1B2A41]
+           h-10;
+}
+footer {
+    @apply flex w-full 
+         bg-[#1B2A41]
+           h-10;
+}
+nav {
+    @apply flex ;
 }
 .nav-links {
-    @apply text-[#CCC9DC];
+    @apply text-[#CCC9DC]
+             flex ;
 }
 .nav-links a {
     @apply hover:underline 
          hover:decoration-[#324A5f] 
            hover:decoration-2
            hover:underline-offset-2
-           m-1;
+           m-2
+           
+           ;
 }
 h1 {
     @apply text-[#CCC9DC]
+             flex items-center flex-grow ml-1
              ;
 }

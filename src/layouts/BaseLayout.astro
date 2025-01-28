@@ -1,7 +1,8 @@
 ---
 import { Icon } from 'astro-icon/components'
 import Header from '../components/Header.astro';
-import '../styles/tailwind.css'
+import '../styles/tailwind.css';
+import Footer from '../components/Footer.astro';
 ---
 
 <!doctype html>
@@ -18,5 +19,6 @@ import '../styles/tailwind.css'
         <main>
             <slot />
         </main>
+		<Footer />
 	</body>
 </html>
