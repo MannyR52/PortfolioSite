@@ -1,7 +1,7 @@
 ---
+import '../styles/tailwind.css';
 import { Icon } from 'astro-icon/components';
 import Header from '../components/Header.astro';
-import '../styles/tailwind.css';
 import Footer from '../components/Footer.astro';
 ---
 
@@ -12,11 +12,11 @@ import Footer from '../components/Footer.astro';
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{Astro.props.title}</title>
-		<link rel="icon" href="/src/icons/favicon.svg">
+		<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 	</head>
 	<body>
         <Header />
-        <main>
+        <main class="container mx-auto p-4">
             <slot />
         </main>
 		<Footer />

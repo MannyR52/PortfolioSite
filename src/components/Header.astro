@@ -3,9 +3,9 @@ import { Icon } from 'astro-icon/components'
 import Navigation from './Navigation.astro';
 ---
 <header>
-        <Icon name="logo" size="40"/>
-        <h1>Manuel Ramirez</h1>
-    <nav>
+    <div class="container mx-auto p-1 flex justify-between items-center">
+        <img src="/logo.svg" alt="Manny's Site" class="h-14" />
+        <a href="/" class="text-xl font-bold">Manuel - Software Engineer</a>
         <Navigation />
-    </nav>
+    </div>
 </header>

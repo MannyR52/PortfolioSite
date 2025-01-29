@@ -3,60 +3,23 @@
 @tailwind utilities;
 
 body {
-    @apply bg-[#0C1821]
-             font-mono;
+    @apply
+        bg-[#0C1821]
+        font-mono
+        ;
 }
+
 header {
-    @apply flex items-center justify-between 
-           bg-[#1B2A41]
-           h-10;
+    @apply
+        bg-[#1B2A41] 
+        text-[#CCC9DC]
+        shadow-lg
+        ;
 }
+
 main {
-    @apply mb-auto
-           ;
-}
-footer {
-    @apply w-full 
-         bg-[#1B2A41]
-           h-10
-           fixed bottom-0
-           ;
-}
-.copy-wrapper {
-    @apply m-1
-           flex
-           justify-between
-           ;
-}
-.copyright {
-    @apply m-1
-           px-10
-           ;
-}
-.footer-socials {
-    @apply 
-           flex
-           space-x-2
-           px-10
-           ;
-           
-           
-}
-.nav-links {
-    @apply text-[#CCC9DC]
-    flex ;
-}
-.nav-links a {
-    @apply hover:underline 
-         hover:decoration-[#324A5f] 
-           hover:decoration-2
-           hover:underline-offset-2
-           m-2
-           
-           ;
-}
-h1 {
-    @apply text-[#CCC9DC]
-             flex-grow ml-1
-             ;
+    @apply
+        container mx-auto 
+        p-4 sm:p-6 md:p-8 lg:p-12
+        ;
 }

@@ -1,7 +1,16 @@
 ---
-
+const links = [
+    {name: "Home", href: "/"},
+    {name: "About", href: "/about"}
+];
 ---
-<div class="nav-links">
-    <a href="/">Home</a>
-    <a href="/about">About</a>
-</div>
+<nav class="bg-[#1B2A41] text-[#CCC9DC]">
+    <ul class="flex space-x-4">
+        {links.map((link) => (
+            <li>
+                <a href={link.href}
+                   class="hover:underline underline-offset-4 decoration-[#324A5F] decoration-2">{link.name}</a>
+            </li>
+         ))}
+    </ul>
+</nav>
