@@ -1,0 +1,29 @@
+---
+const icons = [
+    {name: "Python", src: "/src/icons/python-gray.svg", colorSrc: "/src/icons/python-color.svg"},
+    {name: "C", src: "/src/icons/c-gray.svg", colorSrc: "/src/icons/c-color.svg"},
+    {name: "HTML", src: "/src/icons/html-gray.svg", colorSrc: "/src/icons/html-color.svg"},
+    {name: "CSS", src: "/src/icons/css-gray.svg", colorSrc: "/src/icons/css-color.svg"},
+    {name: "Tailwind", src: "/src/icons/tailwind-gray.svg", colorSrc: "/src/icons/tailwind-color.svg"},
+    {name: "JavaScript", src: "/src/icons/js-gray.svg", colorSrc: "/src/icons/js-color.svg"},
+    {name: "SQL", src: "/src/icons/sql-gray.svg", colorSrc: "/src/icons/sql-color.svg"},
+    {name: "NodeJS", src: "/src/icons/node-gray.svg", colorSrc: "/src/icons/node-color.svg"},
+    {name: "Flask", src: "/src/icons/flask-gray.svg", colorSrc: "/src/icons/flask-color.svg"},
+    {name: "Astro", src: "/src/icons/astro-gray.svg", colorSrc: "/src/icons/astro-color.svg"},
+];
+---
+
+<section class="bg-[#CCC9DC] opacity-80 p-4 rounded-lg shadow-md max-w-4xl mx-auto text-center mt-6">
+    <h2 class="text-2xl font-semibold text-black">My Skills</h2>
+        <div class="grid grid-cols-5 gap-6 justify-center mt-4">
+            {icons.map((icon) => (
+                <div class="flex flex-col items-center">
+                    <div class="relative w-16 h-16 mx-auto transition-transform duration-300 hover:scale-110">
+                        <img src={icon.src} alt={icon.name} class="absolute inset-0 w-full h-full opacity-100 transition-opacity duration-300 hover:opacity-0" />
+                        <img src={icon.colorSrc} alt={icon.name} class="absolute inset-0 w-full h-full opacity-0 transition-opacity duration-300 hover:opacity-100" />
+                    </div>
+                    <p class="mt-2 text-sm text-gray-700">{icon.name}</p>
+                </div>
+            ))}
+        </div>
+</section>
