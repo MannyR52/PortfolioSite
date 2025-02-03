@@ -13,8 +13,8 @@ const icons = [
 ];
 ---
 
-<section class="bg-[#CCC9DC] opacity-80 p-4 rounded-lg shadow-md max-w-4xl mx-auto text-center mt-6">
-    <h2 class="text-2xl font-semibold text-black">My Skills</h2>
+<section class="bg-black opacity-80 p-4 rounded-lg shadow-md max-w-4xl mx-auto text-center mt-6">
+    <h2 class="text-2xl font-semibold text-gray-400">Some of my most used technologies:</h2>
         <div class="grid grid-cols-5 gap-6 justify-center mt-4">
             {icons.map((icon) => (
                 <div class="flex flex-col items-center">
@@ -22,7 +22,7 @@ const icons = [
                         <img src={icon.src} alt={icon.name} class="absolute inset-0 w-full h-full opacity-100 transition-opacity duration-300 hover:opacity-0" />
                         <img src={icon.colorSrc} alt={icon.name} class="absolute inset-0 w-full h-full opacity-0 transition-opacity duration-300 hover:opacity-100" />
                     </div>
-                    <p class="mt-2 text-sm text-gray-700">{icon.name}</p>
+                    <p class="mt-2 text-sm text-gray-400">{icon.name}</p>
                 </div>
             ))}
         </div>
