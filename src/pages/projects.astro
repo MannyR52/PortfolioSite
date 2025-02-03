@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const projects = [
+    { title: "UNDER CONSTRUCTION", description: "Check back for updates!", link: "" },
+];
+---
+
+<BaseLayout title="Projects">
+    <section class="max-w-4xl mx-auto p-6">
+        <h1 class="text-3xl font-semibold text-[#CCC9DC] text-center">My Projects</h1>
+
+        <div class="mt-6 space-y-6">
+            {projects.map((project) => (
+                <div class="p-4 bg-[#CCC9DC] rounded-lg shadow-md">
+                    <h2 class="text-xl font-medium text-[#1B2A41]">{project.title}</h2>
+                    <p class="text-gray-700 mt-2">{project.description}</p>
+                    <a href={project.link} 
+                       class="text-[#1B2A41] font-medium hover:underline">
+                        View Project →
+                    </a>
+                </div>
+            ))}
+        </div>
+    </section>
+</BaseLayout>
